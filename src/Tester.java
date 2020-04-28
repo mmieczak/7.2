@@ -22,17 +22,18 @@ public class Tester {
         beginnerStudents[1] = new Student("Elen", "Moore", 18);
         beginnerStudents[2] = new Student("Elvis", "Presley", 50);
 
+        //Create another group for different lecture using same students
         Student[] advancedStudents = new Student[3];
-        advancedStudents[0] = new Student("Tom", "Cruise", 66);
-        advancedStudents[1] = new Student("Arnold", "S", 24);
-        advancedStudents[2] = new Student("Mac", "Spencer", 32);
+        advancedStudents[0] = beginnerStudents[0];
+        advancedStudents[1] = beginnerStudents[1];
+        advancedStudents[2] = beginnerStudents[2];
 
-        //Assign marks for students
+        //Assign marks for beginners students
         beginnerStudents[0].setMark("3");
         beginnerStudents[1].setMark("4");
         beginnerStudents[2].setMark("2");
 
-        //Assign marks for students
+        //Assign marks for advanced students
         advancedStudents[0].setMark("1");
         advancedStudents[1].setMark("5");
         advancedStudents[2].setMark("6");
