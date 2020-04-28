@@ -1,12 +1,11 @@
 public class Tester {
-    /*Zamodeluj następującą rzeczywistość, tworząc w programie odpowiednie klasy.
-    Program przeznaczony jest dla firmy prowadzącej rozmaite szkolenia.
-    W systemie będą przechowywane informacje zarówno o prowadzących jak i studentach.
-    Powinna też istnieć klasa reprezentująca grupę zajęciową.
-    Grupa powinna mieć przypisanego prowadzącego oraz potencjalnie wielu studentów.
+    /*Przemodeluj poprzednią aplikację w taki sposób, aby istniała możliwość nadania studentowi oceny w danej grupie
+    zajęciowej.
+    Weź pod uwagę fakt, że student może w tej szkole uczestniczyć w wielu różnych zajęciach.
 
-    W klasie testowej utwórz grupę z przypisanym prowadzącym i co najmniej dwoma studentami.
-    Wyświetl pełne informacje na temat grupy w konsoli.*/
+    Utwórz co najmniej dwie grupy oraz studenta, który jest do nich zapisany.
+    Przypisz mu dwie różne oceny w dwóch różnych grupach.
+    Wyświetl historię ocen studenta uwzględniające wszystkie jego zajęcia*/
 
     public static void main(String[] args) {
 
@@ -28,14 +27,20 @@ public class Tester {
         advancedStudents[1] = new Student("Arnold", "S", 24);
         advancedStudents[2] = new Student("Mac", "Spencer", 32);
 
+        //Assign marks for students
+        beginnerStudents[0].setMark("3");
+        beginnerStudents[1].setMark("4");
+        beginnerStudents[2].setMark("2");
+
+        //Assign marks for students
+        advancedStudents[0].setMark("1");
+        advancedStudents[1].setMark("5");
+        advancedStudents[2].setMark("6");
 
         //Create container for lecture groups, register 3 groups
         StudentGroup[] studentGroups = new StudentGroup[3];
         studentGroups[0] = new StudentGroup("Beginners", "Monday", trainersContainer[0], beginnerStudents);
-        studentGroups[1] = new StudentGroup("Medium", "Wednesday", trainersContainer[1], advancedStudents);
-
-
-        printTrainerContainer(trainersContainer);
+        studentGroups[1] = new StudentGroup("Advanced", "Wednesday", trainersContainer[1], advancedStudents);
 
         printGroupContainer(studentGroups);
     }
