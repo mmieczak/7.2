@@ -11,7 +11,7 @@ public class Tester {
 
         //Create container for Trainers, register 3 trainers
         Trainer[] trainersContainer = new Trainer[3];
-        trainersContainer[0] = new Trainer("Bill", "Clinton", 60, "Cognitive Learning");
+        trainersContainer[0] = new Trainer("Bill", "Clinton", 61, "Cognitive Learning");
         trainersContainer[1] = new Trainer("Lech", "Walesa", 70, "Leadership");
         trainersContainer[2] = new Trainer("Gall", "Anonim", 50, "Standup");
 
