@@ -20,6 +20,6 @@ public class StudentGroup {
                 ", lectureDay='" + lectureDay + '\'' +
                 ", trainer=" + trainer +
                 ", students=" + Arrays.toString(students) +
-                '}';
+                '}' ;
     }
 }

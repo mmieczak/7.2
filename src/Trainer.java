@@ -10,6 +10,6 @@ public class Trainer extends Person {
     public String toString() {
         return "Trainer{" + super.toString() +
                 ", specialization='" + specialization + '\'' +
-                '}';
+                '}' ;
     }
 }

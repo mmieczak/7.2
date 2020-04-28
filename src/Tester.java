@@ -66,7 +66,7 @@ public class Tester {
     }
 
     public static void printGroupContainer(StudentGroup[] groups) {
-        System.out.println("--------------------------------------");
+        System.out.println("---------------------------------------");
         System.out.println("\nList of Groups:");
         for (StudentGroup group : groups) {
             if (group != null) {

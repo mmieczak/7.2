@@ -22,6 +22,6 @@ public class Student extends Person {
                 ", surname='" + this.getSurname() + '\'' +
                 ", age=" + this.getAge() + '\'' +
                 ", mark=" + mark +
-                '}';
+                '}' ;
     }
 }

@@ -39,6 +39,6 @@ public class Person {
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", age=" + age +
-                '}';
+                '}' ;
     }
 }
