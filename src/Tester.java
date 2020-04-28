@@ -24,22 +24,22 @@ public class Tester {
 
         //Create another group for different lecture using same students
         Student[] advancedStudents = new Student[3];
-        advancedStudents[0] = beginnerStudents[0];
-        advancedStudents[1] = beginnerStudents[1];
-        advancedStudents[2] = beginnerStudents[2];
+        advancedStudents[0] = new Student("Tom", "Buschalka", 30);
+        advancedStudents[1] = new Student("Elen", "Moore", 18);
+        advancedStudents[2] = new Student("Elvis", "Presley", 50);
 
         //Assign marks for beginners students
-        beginnerStudents[0].setMark("3");
-        beginnerStudents[1].setMark("4");
-        beginnerStudents[2].setMark("2");
+        beginnerStudents[0].setMark("1");
+        beginnerStudents[1].setMark("2");
+        beginnerStudents[2].setMark("3");
 
         //Assign marks for advanced students
-        advancedStudents[0].setMark("1");
+        advancedStudents[0].setMark("4");
         advancedStudents[1].setMark("5");
         advancedStudents[2].setMark("6");
 
         //Create container for lecture groups, register 3 groups
-        StudentGroup[] studentGroups = new StudentGroup[3];
+        StudentGroup[] studentGroups = new StudentGroup[2];
         studentGroups[0] = new StudentGroup("Beginners", "Monday", trainersContainer[0], beginnerStudents);
         studentGroups[1] = new StudentGroup("Advanced", "Wednesday", trainersContainer[1], advancedStudents);
 
